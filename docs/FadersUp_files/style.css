@@ -1,0 +1,102 @@
+/*.faders-grid {
+    display: flex;
+    flex-wrap: wrap;
+}*/
+
+.faders-grid .post-item {
+    border: 0;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    background: #000;
+}
+
+.faders_thumbnail {
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-title, .card-text {
+    transform: translateZ(20px);
+    color: #fff;
+    padding-left: 20px;
+}
+
+/**/
+.custom-gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.custom-gallery-item {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.custom-gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.fader-slider {
+    height: 90vh;
+}
+.fancy-block {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+}
+
+a[data-fancybox="gallery"] {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+a[data-fancybox="gallery"]:hover img {
+    opacity: 1;
+    -ms-transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+    transition: all .3s;
+}
+a[data-fancybox="gallery"]:hover .img_title {
+    opacity: 1;
+}
+a[data-fancybox="gallery"]:hover::before {
+    position: absolute;
+    left: 0;
+    background: #33333352;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    content: '';
+    z-index: 1;
+}
+.img_title {
+    opacity: 0;
+    display: none;
+    position: absolute !important;
+    opacity: 0; 
+    color: #fff;
+    font-family: "DIN Next LT Pro Font", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    transition: all .45s ease-in-out ;
+    -webkit-transition: all .45s ease-in-out;
+    z-index: 2;
+}
